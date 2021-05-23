@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.sidebar-main {
+  width: 300px;
+  height: 100vh;
+  position: fixed;
+  background-color: #005792;
+  color: azure;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  /* padding-left: 25px; */
+}
+.brand {
+  padding-left: 30px;
+  margin: 20px 0;
+  font-size: 1.3rem;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-style: italic;
+  font-size: 1.5rem;
+}
+.navigation ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  font-size: large;
+}
+.navigation ul li {
+  width: 100%;
+  /* padding: 10px 30px; */
+}
+.navigation a {
+  text-decoration: none;
+  color: azure;
+  /* width: 20px; */
+  font-weight: 500;
+  display: block;
+  width: 100%;
+  padding: 10px 3px;
+  padding-right: 87px;
+  padding-left: 20px;
+}
+.navigation a:hover {
+  background-color: #00adb5;
+  border-radius: 0px 5px 5px 0px;
+  width: 100%;
+}
+.main-dashboard {
+  margin-left: 300px;
+}
+/* main-dashboard */
+.main-dashboard {
+  background-color: powderblue;
+  height: 100vh;
+}
+.searchbar {
+  background-color: azure;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 40px;
+}
+.searchbar input {
+  border: none;
+  font-size: larger;
+  border-radius: 25px;
+  padding: 10px;
+  outline: none;
+  width: 250px;
+  box-shadow: 0px 2px 2px 1px powderblue;
+}
+.icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: plum;
+}
+.overview {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+.box {
+  margin: 10px;
+  background-color: azure;
+  min-height: 150px;
+  box-shadow: 0px 2px 2px 1px powderblue;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+/* recent order and buyers */
+.order-details {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  height: 100%;
+}
+.orders {
+  background-color: azure;
+}
+.buyers {
+  background-color: azure;
+}
+.orders,
+.buyers {
+  margin: 10px;
+  border-radius: 10px;
+  height: 680px;
+}
+@media (max-width: 700px) {
+  .order-details {
+    grid-template-columns: 1fr;
+  }
+}
